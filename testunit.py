@@ -16,6 +16,6 @@ class TestHello(unittest.TestCase):
     def test_project(self):
 	rv = self.app.get('/projects/')
 	self.assertEqual(rv.status, '200 OK')
-        self.assertEqual(rv.data, b'The project page')
+	self.assertEqual(rv.data, b'The project page')
 if __name__ == '__main__':
     unittest.main()
