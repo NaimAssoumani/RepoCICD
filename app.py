@@ -9,5 +9,15 @@ def hello():
 def hello_user(username):
     return 'salut %s!\n' % username
 
+@app.route('/projects/')
+def projects():
+    return 'The project page'
+
+@app.route('/about')
+def about():
+    return 'The about page'
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
+
+
